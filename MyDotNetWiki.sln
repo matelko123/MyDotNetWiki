@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34607.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F15DED5C-01F4-499B-B8D1-FB8A7D551EB4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIs", "APIs", "{123F88D0-7274-43DD-B35D-40C449ACDE12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "REST", "REST", "{E45FB025-5790-450A-9C26-DCA907733147}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\APIs\REST\WebAPI\WebAPI.csproj", "{6ADC32A6-2020-4608-B320-DE37710DB29C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ADC32A6-2020-4608-B320-DE37710DB29C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ADC32A6-2020-4608-B320-DE37710DB29C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ADC32A6-2020-4608-B320-DE37710DB29C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ADC32A6-2020-4608-B320-DE37710DB29C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{123F88D0-7274-43DD-B35D-40C449ACDE12} = {F15DED5C-01F4-499B-B8D1-FB8A7D551EB4}
+		{E45FB025-5790-450A-9C26-DCA907733147} = {123F88D0-7274-43DD-B35D-40C449ACDE12}
+		{6ADC32A6-2020-4608-B320-DE37710DB29C} = {E45FB025-5790-450A-9C26-DCA907733147}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E62512AE-19EE-435B-A0DE-64741B41C233}
+	EndGlobalSection
+EndGlobal
