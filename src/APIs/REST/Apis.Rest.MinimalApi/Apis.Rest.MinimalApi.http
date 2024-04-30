@@ -1,0 +1,27 @@
+@Apis.Rest.MinimalApi_HostAddress = https://localhost:7200
+
+### Get all fruits
+GET {{Apis.Rest.MinimalApi_HostAddress}}/api/Fruits
+
+### Add new fruit
+POST {{Apis.Rest.MinimalApi_HostAddress}}/api/Fruits
+Accept: application/json
+Content-Type: application/json
+
+"nanana"
+
+###
+@Id = a1538503-491f-477b-94df-598cb16864ab
+
+### Get specific fruit by Id
+GET {{Apis.Rest.MinimalApi_HostAddress}}/api/Fruits/{{Id}}
+
+### Update existing fruit
+PUT {{Apis.Rest.MinimalApi_HostAddress}}/api/Fruits/{{Id}}
+Accept: application/json
+Content-Type: application/json
+
+"nananaaaaaaa"
+
+### Delete existing fruit
+DELETE {{Apis.Rest.MinimalApi_HostAddress}}/api/Fruits/{{Id}}
