@@ -1,25 +1,27 @@
-@WebAPI_HostAddress = http://localhost:5034
+@HostAddress = https://localhost:7298
 
-GET {{WebAPI_HostAddress}}/Fruits/
-###
+### Get all fruits
+GET {{HostAddress}}/api/Fruits
 
-POST {{WebAPI_HostAddress}}/Fruits/
+### Add new fruit
+POST {{HostAddress}}/api/Fruits
+Accept: application/json
 Content-Type: application/json
 
-"Cherry"
+"nanana"
+
 ###
+@Id = 485e90dd-7f2f-4f47-acb8-a4bec43c8ae2
 
+### Get specific fruit by Id
+GET {{HostAddress}}/api/Fruits/{{Id}}
 
-GET {{WebAPI_HostAddress}}/Fruits/58796835-7cad-40dd-93eb-395b1cc4ddfe
-###
-
-
-Put {{WebAPI_HostAddress}}/Fruits/58796835-7cad-40dd-93eb-395b1cc4ddfe
+### Update existing fruit
+PUT {{HostAddress}}/api/Fruits/{{Id}}
+Accept: application/json
 Content-Type: application/json
 
-"Watermelon"
-###
+"nananaaaaaaa"
 
-
-DELETE {{WebAPI_HostAddress}}/Fruits/f96937cc-e51e-42b6-8ba9-14742c2b69ce
-###
+### Delete existing fruit
+DELETE {{HostAddress}}/api/Fruits/{{Id}}

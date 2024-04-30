@@ -1,4 +1,4 @@
-﻿namespace WebAPI.Controllers;
+﻿namespace APIs.REST.WebAPI;
 
 public record Fruit()
 {
